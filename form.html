@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <form action="" id="blogForm">
+      <h2>Create a Blog</h2>
+
+      <label for="title">Blog Title</label>
+      <input type="text" id="title" placeholder="Enter blog title" required />
+
+      <label for="author">Author Name</label>
+      <input type="text" id="author" placeholder="Enter author name" required />
+
+        <label for="type">Blog Type</label>
+      <input type="text" id="type" placeholder="Enter blog type" required />
+
+      <label for="description">Short Description</label>
+      <textarea
+        id="description"
+        rows="3"
+        placeholder="Write a short summary of your blog..."
+        required
+      ></textarea>
+
+      <label for="image">Blog Image</label>
+      <input type="file" id="image" accept="image/*" />
+      <div id="preview"></div>
+
+      <div id="paragraphs">
+        <div class="paragraph-group">
+          <label>Paragraph Title</label>
+          <input
+            type="text"
+            name="paraTitle[]"
+            placeholder="Enter paragraph title"
+          />
+
+          <label>Paragraph Content</label>
+          <textarea
+            name="paraContent[]"
+            placeholder="Enter paragraph content"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
+
+      <button type="button" onclick="addParagraph()">+ Add Paragraph</button>
+      <button type="submit">Publish Blog</button>
+    </form>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

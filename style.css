@@ -97,7 +97,7 @@ main .hero-section{
     font-family: pacifico;
     color:#c7ecee;
 }
-.hero-section button{
+.hero-section a{
     font-size: 1.6vmax;
     text-transform: uppercase;
     padding: 12px 25px;
@@ -107,9 +107,10 @@ main .hero-section{
     color: white;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
     cursor: pointer;
 }
-.hero-section button:hover{
+.hero-section a:hover{
     background-color: transparent;
     border: 2px solid white;
     border-radius: 4px;
@@ -165,12 +166,14 @@ main .hero-section{
     align-items: start;
     flex-direction: column;
     gap: 12px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .blog-card img{
     width: 100%;
     height: 175px;
+    border-radius: 7px;
 }
-#type{
+.type{
     font-size: 10px;
     color: #8e44ad;
     font-weight: 800;
@@ -199,4 +202,22 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 .author-date p{
     font-size: 10px;
     color: #bdc3c7;
+}
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    padding: 10px 0;
 }
