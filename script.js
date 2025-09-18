@@ -7,7 +7,7 @@ let blogs = JSON.parse(localStorage.getItem("blogs")) || [
     type: "Education",
     title: "Getting Started with Frontend Development",
     description:
-      "In this blog, we will explore how to begin your frontend development journey step by step. UX reviews help teams understand usability issues early in the design process.water, creating an exceptional cove. Vila Franca is uninhabited, at least by humans, but many different species of seabirds can be found on the islet. It is protected by BirdLife International, which has identified it as a priority area in terms of conservation. The sea is home to a wide variety of fish, including yellowtail, moray eels, parrotfish and stingrays. The flora is also rich, particularly in native plants such as sugar cane, tamarisk and myrtle. Since humans abandoned the island, its vineyards are no longer tended but a few hardy vines remain.",
+      "In this blog, we will explore how to begin your frontend development journey step by step.",
 
     author: "Venkatesh K.",
     date: "2025-09-15",
