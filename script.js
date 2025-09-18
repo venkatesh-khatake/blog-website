@@ -96,7 +96,7 @@ function renderBlogs() {
       <img src="${blog.image}" alt="${blog.title}" />
       <p class="type">${blog.type}</p>
       <h3>${blog.title}</h3>
-      <p class="description">${blog.description}</p>
+      <p class="description">${truncateText(blog.description, 10)}</p>
       <div class="author-date">
         <h4>${blog.author}</h4>
         <p>${new Date(blog.date).toLocaleDateString()}</p>
@@ -111,6 +111,14 @@ function renderBlogs() {
 
     container.appendChild(blogCard);
   });
+}
+
+function truncateText(text, wordLimit) {
+  const words = text.split(" ");
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(" ") + "...";
+  }
+  return text;
 }
 
 // Initial render
@@ -200,3 +208,6 @@ if (blog) {
 } else {
   document.querySelector(".blog").innerHTML = "<h2>Blog not found!</h2>";
 }
+
+
+document.getElementById('home-btn').addEventListener('click',()=> window.location.href = "index.html");

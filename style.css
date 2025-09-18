@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 header {
-  width: 100%;
+  width: 70%;
   height: 70px;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@ header ul li a:active {
 }
 
 main {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 main .hero-section {
